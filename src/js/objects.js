@@ -17,3 +17,13 @@ const objectValues = Object.values(cursos);
 
 document.getElementById('objectKeysValue').innerHTML = objectKeys.map(index => `<li>${cursos[index]}</li>`);
 document.getElementById('objectValues').innerHTML = objectValues.map(curso => `<li>${curso}</li>`);
+
+
+//rest
+let { javascript, react, ...frameworks } = cursos;
+document.getElementById('objectRest').innerHTML = `<li>${javascript}</li> <li>${react}</li>  <li>${JSON.stringify(frameworks)}</li>`
+
+//spread
+let spread = { javascript, react, ...frameworks };
+spread = Object.entries(spread)
+document.getElementById('objectSpread').innerHTML = spread.map(item => `<li>${JSON.stringify(item)}</li>`)

@@ -94,6 +94,34 @@
                 <ul id='objectValues'></ul>
             </div>
         </div>
+
+        <h3>Rest Properties</h3>
+        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
+        <div class="item-container">
+            <div>
+                <h4>Antes</h4>
+                <ul id='objectKeysValue'></ul>
+            </div>
+            <div>
+                <h4>Depois</h4>
+                let {javascript, react, ...frameworks} = cursos;
+                <ul id='objectRest'></ul>
+            </div>
+        </div>
+
+        <h3>Spread Properties</h3>
+        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
+        <div class="item-container">
+            <div>
+                <h4>Antes</h4>
+                <ul id='objectKeysValue'></ul>
+            </div>
+            <div>
+                <h4>Depois</h4>
+                let {javascript, react, ...frameworks} = cursos;
+                <ul id='objectSpread'></ul>
+            </div>
+        </div>
     </div>
 
     <div class="item">
