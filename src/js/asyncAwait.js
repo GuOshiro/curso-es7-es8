@@ -9,7 +9,7 @@ function buscarLivrosPorPromise() {
                 )
         })
         .catch(erro => console.log(erro))
-        .finally(() => console.log('oi'))
+        .finally(() => console.log('Busca de livros pela promisse '))
 }
 
 
@@ -27,5 +27,8 @@ async function buscarLivrosPorAsyncAwait() {
 
 const finallys = 'https://thecodebarbarian.com/using-promise-finally-in-node-js.html';
 
-buscarLivrosPorPromise();
-buscarLivrosPorAsyncAwait();
+
+buscarLivros = buscarLivrosPorAsyncAwait()
+    .then(() => console.log('Agora que resgato por async await, resgate por buscarLivrosPorPromise'))
+    .catch((error) => console.error({ 'Erro inesperado': error }))
+    .finally(() => buscarLivrosPorPromise())
