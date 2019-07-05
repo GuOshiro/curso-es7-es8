@@ -29,8 +29,3 @@ async function gerarFrase(text) {
     let myDivElement = document.getElementById('aDiv');
     myDivElement.innerHTML = '<p>' + newText + '</p>';
 }
-
-gerarFrase('Os melhores alimentos são ')
-
-a = 'https://www.codementor.io/tiagolopesferreira/asynchronous-iterators-in-javascript-jl1yg8la1';
-a = 'https://medium.com/information-and-technology/ecmascript-2018-asynchronous-iteration-ec0b6a3a294a';
