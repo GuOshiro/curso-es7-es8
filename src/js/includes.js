@@ -9,3 +9,4 @@ frutas.forEach(fruta => {
 
 document.getElementById('resultIndexOf').innerText = `${frutaSelecionadaExiste}`;
 document.getElementById('resultIncludes').innerText = `${frutas.includes('maça')}`;
+
