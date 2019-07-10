@@ -62,10 +62,12 @@ const alimentosAsync = {
 };
 
 
+
+
+
+
 (async function () {
-    const iterator = alimentosAsync[Symbol.iterator]()
-    console.log((await iterator.next()).value)
-    console.log((await iterator.next()).value)
-    console.log((await iterator.next()).value)
-    console.log((await iterator.next()).value)
+    for await (const alimento of asyncIteratorAlimentos) {
+        console.log(await alimento)
+    }
 })()
