@@ -11,172 +11,18 @@
 
 <body>
     <div class="item">
-        <h1>String Padding</h1>
-        <h3>padStart</h3>
+        <h1>Titulo</h1>
+        <h3>sub-titulo</h3>
         <div class="item-container">
             <div>
                 <h4>Antes</h4>
-                <p>Frases no Inicio</p>
             </div>
             <div>
                 <h4>Depois</h4>
-                <div id='listaDeCompra'></div>
-                <p id='padStart'>Frases no Inicio</p>
-            </div>
-        </div>
-        
-        <h3>padEnd</h3>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <p>Insere Frases</p>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <div id='sobrenome'></div>
-                <p id='padEnd'>Insere Frases</p>
             </div>
         </div>
     </div>
 
-    <div class="item">
-        <h1>Exponentiation</h1>
-        <h3>Exponencial de 3²</h3>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <p>Math.pow(2, 3) = <span id='resultMath'></span></p>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <p>2 ** 3 = <span id='resultExponatiation'></span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="item">
-        <h1>Includes do Array</h1>
-        <h3>Verificar algum elemento na constante frutas = ['banana', 'maça', 'melao']</h3>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <p>frustas.indexOf(2) === 'maça' => <span id='resultIndexOf'></span></p>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <p>frustas.includes('maça') => <span id='resultIncludes'></span></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="item">
-        <h1>Objects</h1>
-        <h3>Entries</h3>
-        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <ul id='objectKeys'></ul>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <ul id='objectEntries'></ul>
-            </div>
-        </div>
-
-        <h3>Values</h3>
-        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <ul id='objectKeysValue'></ul>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <ul id='objectValues'></ul>
-            </div>
-        </div>
-
-        <h3>Rest Properties</h3>
-        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <ul id='objectKeysValue'></ul>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                let {javascript, react, ...frameworks} = cursos;
-                <ul id='objectRest'></ul>
-            </div>
-        </div>
-
-        <h3>Spread Properties</h3>
-        <h4>const cursos = { javascript: 1, react: 2, angular: 3, vue: 4 }</h4>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <ul id='objectKeysValue'></ul>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                let {javascript, react, ...frameworks} = cursos;
-                <ul id='objectSpread'></ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="item">
-        <h1>Trailling Commas</h1>
-        <div class="item-container">
-            <div>
-                <h4>Antes</h4>
-                <div>
-                    function sum (a, b) {
-                    return a + b;
-                    }
-                </div>
-            </div>
-            <div>
-                <h4>Depois</h4>
-                <div>
-                    function sum (a, b, ) {
-                    return a + b;
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="item">
-        <h1>Async</h1>
-        <div class="item-container">
-            <ul>
-                <h4>Com promisse</h4>
-                <ul id='listaComPromise'></ul>
-        </div>
-        <div>
-            <h4>Com async await</h4>
-            <ul id='listaComAsync'></ul>
-        </div>
-    </div>
-
-    <div class="item">
-        <h1>Async Iterable</h1>
-        <div>
-            <div>
-                <div id="alimentos"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- scripts -->
-    <script src="./js/stringPadding.js"></script>
-    <script src="./js/exponentiation.js"></script>
-    <script src="./js/includes.js"></script>
-    <script src="./js/objects.js"></script>
-    <script src="./js/asyncAwait.js"></script>
-    <script src="./js/asyncIterable.js"></script>
 </body>
 
 </html>
